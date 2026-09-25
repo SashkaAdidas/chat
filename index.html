@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Интерфейс чата</title>
+  </head>
+  <body>
+    <div class="chat">
+      <aside class="chat-aside">
+        <div class="chat-top">
+          <h1 class="chat-title">Сообщения</h1>
+          <button class="chat-btn" aria-label="Написать сообщение">
+            <img src="./img/btn.png" />
+          </button>
+        </div>
+
+        <input placeholder="Поиск диалогов..." type="text" class="chat-input" />
+
+        <ul class="chat-items">
+          <li class="chat-item">
+            <a href="" class="chat-user-card chat-user-card--active">
+              <img class="chat-user-card__avatar" src="/img/Alex.png" />
+              <div class="chat-user-card_text">
+                <div class="chat-user-card__top">
+                  <div class="chat-user-card__name">Алексей</div>
+                  <time
+                    datetime="2026-07-06T14:32:00"
+                    class="chat-user-card__time"
+                    >14:32</time
+                  >
+                </div>
+                <p class="chat-user-card__descr">
+                  Давай обновим layout карточек и посмотрим на spacing
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="chat-item">
+            <a href="" class="chat-user-card">
+              <img src="/img/Mary.png" />
+              <div class="chat-user-card_text">
+                <div class="chat-user-card__top">
+                  <div class="chat-user-card__name">Мария</div>
+                  <time
+                    datetime="2026-07-06T14:32:00"
+                    class="chat-user-card__time"
+                    >Вчера</time
+                  >
+                </div>
+                <p class="chat-user-card__descr">
+                  Я закончила адаптив для страницы профиля
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="chat-content">
+        <div class="chat-panel">
+          <div class="chat-user">
+            <img class="chat-user__avatar" src="./img/Alex.png" alt="#" />
+            <div class="chat-user__text">
+              <div class="chat-user__name">Алексей Орлов</div>
+              <div class="chat-user__status">Онлайн</div>
+            </div>
+          </div>
+          <div class="chat_btns">
+            <button class="chat-btn">
+              <img src="./img/btn1.png" />
+            </button>
+            <button class="chat-btn">
+              <img src="./img/btn2.png" />
+            </button>
+          </div>
+        </div>
+        <div class="chat__messages">
+          <div class="chat__message">
+            <div class="chat-message__inner">
+              Давай попробуем сделать карточки компактнее, а отступы внутри
+              интерфейса привести к одной системе.
+            </div>
+            <time datetime="2026-07-06T14:21:00" class="chat-message__time"
+              >14:21</time
+            >
+            </div>
+          <div class="chat__message chat-message--mine">
+            <div class="chat-message__inner">
+              Да, и ещё нужно пересобрать layout блока прогресса.
+            </div>
+            <time datetime="2026-07-06T14:24:00" class="chat-message__time"
+              >14:24</time
+            >
+</div>
+            <div class="chat__message">
+              <div class="chat-message__inner">
+                Отлично, тогда вечером подготовлю новый вариант интерфейса.
+              </div>
+              <time datetime="2026-07-06T14:28:00" class="chat-message__time"
+                >14:28</time
+              >
+       
+            </div>
+          
+        </div>
+        <div class="chat__bottom">
+          <form class="chat__form">
+            <input
+              class="chat_input"
+              type="text"
+              placeholder="Напишите сообщение..."
+            />
+            <button type="submit" class="chat_send">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
